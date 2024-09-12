@@ -1,0 +1,12 @@
+{
+  "name": "mongoosesetuppractice",
+  "version": "1.0.0",
+  "description": "# from terminal:  - npm init -y  - touch index.js - npm i express mongoose dotenv (can do all in one line) - go to package.json - set \"type\": \"module\", underneath \"main\": \"index.js\", - this allows us to use es6 and use import/export  - import express in index.js  - create app - const app = express() - create port variable - const port = 8080 - create route -    app.get('/', req, res ) - add app.listen route to server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

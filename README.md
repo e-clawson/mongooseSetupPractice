@@ -15,10 +15,14 @@ Packages/technologies and their documentation:
 - dotenv - 
 - .gitignore - a file type used in a git repository - tells git which files NOT to commit - used for keeping things like passwords and other sensitive information from being shared in a place where the could be accessed unsecurely. (https://git-scm.com/docs/gitignore/en)
 - ES6 - the 6th version of JavaScript - we use it in our project to allow us to use the import and export syntax between files 
+- nodemon - is a utility designed to monitor any changes and automatically restart your server when changes occur. it is used in place of node  - https://nodemon.io/
 
+------------------ 
 notes: 
 - please note - terminal commands are listed in single quotes 'like this' - do not include the single quotes when running the commend in the terminal 
 - this project uses a sample data set from mongoDB - "sample_training" - within this set we are using "grades"
+- port - I am using port 8080 in this project -it can be reached by going to http://localhost:8080/ in a web browser 
+- nodemon - to run the server we are using nodemon - if you do not already have it installed locally, you will need to install it to run the server - use the command 'npm install -g nodemon' to install it globally on your device/computer
 
 # steps 
 
@@ -30,8 +34,11 @@ environment set-up from terminal:
 
 environment setup and initial steps in index.js file: 
 5. import express in index.js (see index.js - line 1)
-- create app - const app = express()
-- create port variable - const port = 8080
-- create route - 
-  app.get('/', req, res )
-- add app.listen route to server 
+6. create app - const app = express() (see index.js - line 2)
+7. create port variable - const port = 8080 (see index.js - line 3) (you can use whatever port number you prefer - we used 8080 here, 3000 and 5000 are also popular)
+8. create initial server route - 
+9. setup server - add app.listen route to server
+10. test that your server routes are working - run 'nodemon' in the terminal to open nodemon. if it hits the app.listen route you will see the terminal print "server is listening on port: 8080". Open your web browser and go to http://localhost:8080/ - you should see "hello" appear in the window 
+
+
+

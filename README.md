@@ -43,5 +43,5 @@ environment setup and initial steps in index.js file:
 make and set-up a db.js file
 why? - 
 11. in the terminal type 'touch db.js' to create a db.json file 
-12. 
-
+12. import mongoose from mongoose - see line 1 
+13. connect to the mongoDB database using mongoose (db.js - line 3) (we wrap it in a function - so it's easier to control when it is triggered, and easier to debug - can console.log to find errors) - we also use a try/catch so that we can catch errors faster 

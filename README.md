@@ -40,5 +40,8 @@ environment setup and initial steps in index.js file:
 9. setup server - add app.listen route to server
 10. test that your server routes are working - run 'nodemon' in the terminal to open nodemon. if it hits the app.listen route you will see the terminal print "server is listening on port: 8080". Open your web browser and go to http://localhost:8080/ - you should see "hello" appear in the window 
 
-
+make and set-up a db.js file
+why? - 
+11. in the terminal type 'touch db.js' to create a db.json file 
+12. 
 
